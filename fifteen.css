@@ -1,0 +1,153 @@
+body {
+    background-color: #FEFAD4;
+    font-family: Arial, sans-serif;
+	margin: 0;
+}
+
+#align{
+	margin: auto;
+	width: 18%;
+}
+#align1{
+	margin: auto;
+	width: 22%;
+	color:black;
+	background-color:white;
+	font-size:22px;
+}
+#overall {
+    width: 400px;
+    margin: auto;
+}
+@keyframes firecrackers {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(-650px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+}
+
+.firecracker {
+    width: 30px;
+    height: 30px;
+    background-color: red; /* Firecracker color */
+    border-radius: 50%;
+    position: absolute;
+    animation: firecrackers 1s infinite;
+}
+
+
+#puzzlearea {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+#cheatButton{
+	margin-top:9px;
+	margin-bottom:9px;
+}
+
+.puzzlepiece {
+    float: left;
+    border: 2px solid black;
+    font-size: 32pt;
+    color: white;
+    height: 96px;
+    line-height: 96px;
+    position: absolute;
+    text-align: center;
+    width: 96px;
+    transition: transform 0.3s ease-in-out; /* Existing transition */
+    animation: slide 0.3s ease-in-out; /* New animation */
+}
+
+@keyframes slide {
+    from {
+        transform: translate(5px, 5px);
+    }
+    to {
+        transform: translate(5px, 5px); /* Adjust the offset as needed */
+    }
+}
+
+.puzzlepiece:hover {
+    border-color: red;
+    color: #006600;
+    text-decoration: underline;
+}
+
+
+#controls,
+#overall,
+#puzzlearea {
+	width: 400px;
+    text-align: center;
+}
+
+.explanation{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 20px;
+    text-align: center;
+}
+
+#controls {
+	padding-top: 10px;
+	text-align: center;
+}
+
+h1 {
+	margin: 10px 0px;
+	text-align: center;
+    font-size: 40px;
+}
+
+/* Used to center the puzzle. */
+#overall {
+	margin-left: auto;
+	margin-right: auto;
+    position: relative;
+}
+
+/* The area that holds the 15 puzzle pieces. */
+#puzzlearea {
+	font-size: 32px;
+	height: 400px;
+	padding: 0px;
+	position: relative;
+}
+
+/* This class should be applied to each of the 15 puzzle pieces. */
+.puzzlepiece {
+	background-image: url(background.jpg);
+	border: 2px solid black;
+	height: 96px;
+	line-height: 96px;
+	position: absolute;
+	text-align: center;
+	vertical-align: middle;
+	width: 96px;
+}
+
+/* This class should be applied to a puzzle piece that can be moved. */
+.movablepiece:hover {
+	border-color: white;
+	color: black;
+	text-decoration: underline;
+}
+
+#w3c {
+	text-align: right;
+}
+
+#w3c, img {
+	border: none;
+    text-align: center;
+}

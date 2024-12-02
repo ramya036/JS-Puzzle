@@ -1,0 +1,49 @@
+<!--
+End-of-game notification
+Animations and/or transitions
+Game time with some music file
+Multiple backgrounds
+Multiple grids 
+Stop button 
+Cheat button -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fifteen Puzzle</title>
+    <link rel="stylesheet" href="eight.css">
+</head>
+<body>
+	<audio controls loop autoplay src="Cool-Puzzler.mp3" style="display:none"></audio>
+    <div id="header">
+        <h1>Fifteen Puzzle</h1>
+    </div>
+	<div id="align">
+	<label for="backgroundImage">Select Background:</label>
+	<select id="backgroundImage">
+    <option value="b1.jpg">Background 1</option>
+    <option value="b2.jpg">Background 2</option>
+    <option value="b3.jpg">Background 3</option>
+    <option value="b4.jpg">Background 4</option>
+	</select>
+	</div>
+	<div id="overall">
+			<div id="puzzle-container">
+			</div>
+			<div id="controls"><button id="shuffle-button">Shuffle</button></div>
+			<div id="controls"><button id="cheatButton">Cheat</button></div>
+			<div id="controls"><button id="stopButton">Stop</button></div><br>
+			<div id="timer">Time: 0s</div>
+    		<div id="moves">Moves: 0</div>
+    		<div id="best-time">Best Time: N/A</div>
+   			<div id="best-moves">Best Moves: N/A</div>	
+			<script src="eight.js"></script>
+	</div>
+	<br>
+	<div id="align1"><a href="fifteen.html">Click to play 4x4 version of game</a></div>
+    <div style="text-align: right;">
+      <a href="https://validator.w3.org/"><img src="w3c-xhtml.png" alt="Valid HTML5" /></a> 
+      <a href="https://jigsaw.w3.org/css-validator/"><img src="w3c-css.png" alt="Valid CSS" /></a>
+	</div>
+</body>
+</html>
